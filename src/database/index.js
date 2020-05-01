@@ -1,14 +1,8 @@
 const mysql = require('mysql');
-
+const config = require('../../config/config');
 
 const executeQuery = (query) => new Promise((resolve, reject) => {
-    var con = mysql.createConnection({
-        host: "https://www.db4free.net",
-        user: "ankit_sah",
-        password: "Ankit@88",
-        database: "customer_conviva"
-      });
-      
+    var con = mysql.createConnection(config.database);
       con.connect(function(err) {
         if (err) {
           con.end();
