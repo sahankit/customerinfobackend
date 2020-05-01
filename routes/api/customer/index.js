@@ -14,11 +14,11 @@ router.get('/', (req, res) => {
     customer.fetchAllCustomer().then((data) => {
       res.status(200).send(data);
       const perf = done();
+      console.log(perf);
     }).catch((err) => {
-      
       res.status(500).send(err);
       const perf = done();
-    
+      console.log(perf);
     });
   });
 });
@@ -29,11 +29,11 @@ router.get('/:custId', (req, res) => {
     customer.fetchCustomerAddress(params.custId).then((data) => {
       res.status(200).send(data);
       const perf = done();
+      console.log(perf);
     }).catch((err) => {
-      
       res.status(500).send(err);
       const perf = done();
-    
+      console.log(perf);
     });
   });
 });
