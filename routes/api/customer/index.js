@@ -30,10 +30,12 @@ router.get('/:custId', (req, res) => {
       res.status(200).send(data);
       const perf = done();
       console.log(perf);
+      console.log("Api success");
     }).catch((err) => {
       res.status(500).send(err);
       const perf = done();
       console.log(perf);
+      console.log(err);
     });
   });
 });

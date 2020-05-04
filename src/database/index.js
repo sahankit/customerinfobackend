@@ -6,12 +6,14 @@ const executeQuery = (query) => new Promise((resolve, reject) => {
       con.connect(function(err) {
         if (err) {
           con.end();
+          console.log("connection failed");
           throw err;
         }
         console.log('query'+query);
         con.query(query, function (err, result, fields) {
           if (err)  reject(err);
           resolve(result);
+          console.log("exection of query succesfull");
           con.end();
         });
       });
@@ -23,6 +25,7 @@ const getAllCustomer = () => new Promise((resolve, reject) => {
     console.log(data);  
     resolve(data);
     }).catch(function(err){
+      console.log("exection of query not successfull");
         reject(err);    
     })
   });
@@ -32,6 +35,7 @@ const getAllCustomer = () => new Promise((resolve, reject) => {
     executeQuery("SELECT Address,`Address Id` FROM `Address` WHERE `Customer ID` = '"+customerId+"'").then(function(data){
       resolve(data);
       }).catch(function(err){
+        console.log("exection of query not successfull");
           reject(err);    
       })
   });
