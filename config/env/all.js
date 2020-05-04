@@ -3,7 +3,7 @@ const path = require('path');
 const rootPath = path.normalize(`${__dirname}/../..`);
 
 module.exports = {
-  appName: 'ads-content-service',
+  appName: 'customer-info',
   root: rootPath,
   port: process.env.PORT || 8080,
   https: {
