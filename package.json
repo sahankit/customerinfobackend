@@ -18,7 +18,7 @@
     "express-cache-response-directive": "^1.1.0",
     "express-statsd": "^0.3.0",
     "express-winston": "^2.4.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "lodash.isequal": "^4.5.0",
     "lodash.merge": "^4.6.2",
     "logrotate-stream": "^0.2.5",
