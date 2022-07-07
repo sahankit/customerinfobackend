@@ -22,7 +22,7 @@
     "lodash.isequal": "^4.5.0",
     "lodash.merge": "^4.6.2",
     "logrotate-stream": "^0.2.5",
-    "moment": "^2.19.1",
+    "moment": "^2.29.4",
     "perfy": "^1.1.2",
     "pug": "^2.0.0-rc.4",
     "query-string": "^6.1.0",
