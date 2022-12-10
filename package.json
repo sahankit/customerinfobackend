@@ -14,7 +14,7 @@
     "debug": "^3.1.0",
     "deep-equal-in-any-order": "^1.0.21",
     "deepmerge": "^2.0.1",
-    "express": "^4.16.2",
+    "express": "^4.17.3",
     "express-cache-response-directive": "^1.1.0",
     "express-statsd": "^0.3.0",
     "express-winston": "^2.4.0",
